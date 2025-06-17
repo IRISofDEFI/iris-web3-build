@@ -1,16 +1,13 @@
-# Welcome to your Lovable project
+# Welcome To Iris porfoilo 
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/d33e6f08-a97d-4b6c-8748-f5bbd42d5a8f
-
+**URL**: https://irisofdefi.xyz 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d33e6f08-a97d-4b6c-8748-f5bbd42d5a8f) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -60,14 +57,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/d33e6f08-a97d-4b6c-8748-f5bbd42d5a8f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
