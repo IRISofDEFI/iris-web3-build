@@ -8,7 +8,7 @@ const Projects = () => {
       link: "https://github.com/IRISofDEFI/Token-airdrop-dashboard"
     },
     {
-      name: "BEON Beauty Platform", 
+      name: "BEON Beauty Platform",
       category: "NFTs / Socially",
       tech: ["Smart Contracts", "IPFS"],
       link: "https://github.com/IRISofDEFI/BEON-DAPP"
@@ -20,19 +20,19 @@ const Projects = () => {
       link: "https://github.com/IRISofDEFI/g20-protocol-resistance"
     },
     {
-      name: "NFT w/ Staking",
-      category: "NFT / Staking", 
-      tech: ["ERC-721", "Rewards"]
+      name: "Cartoon MEME Token ",
+      category: "Forntend Design",
+      link: "https://github.com/IRISofDEFI/rug-me-daddy-vibes.git"
     },
     {
-      name: "Web3 Creator Platform",
-      category: "Community Growth",
-      tech: ["DeFi", "Creator Economy"]
+      name: "MaxiBoz",
+      category: "NFT Staking Platform",
+      link: "https://github.com/IRISofDEFI/MaxiBoz-Dapp"
     },
     {
-      name: "Metamask Token dApp",
-      category: "DeFi Governance",
-      tech: ["MetaMask", "Token Swap"]
+      name: "Solpumpx V1",
+      category: "Trading Volume Bot",
+      link: "https://github.com/IRISofDEFI/solpumpx-v1"
     }
   ];
 
@@ -40,9 +40,9 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-16">
-          Token Airdrop DApp
+          PROJECTS
         </h2>
-        
+
         <div className="space-y-1">
           {projects.map((project, index) => (
             <div
@@ -55,11 +55,11 @@ const Projects = () => {
                   {project.name}
                 </h3>
               </div>
-              
+
               <div className="text-gray-400 text-sm min-w-[140px] text-center">
                 {project.category}
               </div>
-              
+
               <div className="flex gap-2 min-w-[120px] justify-end">
                 {project.tech.slice(0, 2).map((tech, techIndex) => (
                   <span

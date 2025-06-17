@@ -6,11 +6,12 @@ const Metrics = () => {
       label: "Blockchain exp."
     },
     {
-      value: "$50M+", 
+      value: "$5M+",
       label: "Tokens launched"
     },
     {
-      value: "100k+",
+
+      value: "10k+",
       label: "Twitter listeners"
     }
   ];
