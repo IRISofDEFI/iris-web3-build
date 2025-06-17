@@ -4,17 +4,20 @@ const Projects = () => {
     {
       name: "Token Airdrop DApp",
       category: "DeFi / Governance",
-      tech: ["Solidity", "React"]
+      tech: ["Solidity", "React"],
+      link: "https://github.com/IRISofDEFI/Token-airdrop-dashboard"
     },
     {
       name: "BEON Beauty Platform", 
       category: "NFTs / Socially",
-      tech: ["Smart Contracts", "IPFS"]
+      tech: ["Smart Contracts", "IPFS"],
+      link: "https://github.com/IRISofDEFI/BEON-DAPP"
     },
     {
       name: "G20 Protocol Token",
       category: "Governance",
-      tech: ["ERC-20", "DAO"]
+      tech: ["ERC-20", "DAO"],
+      link: "https://github.com/IRISofDEFI/g20-protocol-resistance"
     },
     {
       name: "NFT w/ Staking",
@@ -45,6 +48,7 @@ const Projects = () => {
             <div
               key={index}
               className="flex items-center justify-between py-4 px-0 border-b border-gray-800 hover:bg-gray-900/30 transition-colors cursor-pointer group"
+              onClick={() => project.link && window.open(project.link, '_blank')}
             >
               <div className="flex-1">
                 <h3 className="text-white font-medium group-hover:text-blue-400 transition-colors">

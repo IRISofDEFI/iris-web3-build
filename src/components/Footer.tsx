@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex justify-center space-x-8">
           <a
-            href="https://github.com"
+            href="https://github.com/IRISofDEFI"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors flex items-center space-x-2"
@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
           
           <a
-            href="https://twitter.com"
+            href="https://x.com/iris_of_defi?s=21&t=bfQCrmhV29cLFss7zh1S5A"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors flex items-center space-x-2"
