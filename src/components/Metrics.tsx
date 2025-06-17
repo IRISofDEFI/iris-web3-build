@@ -1,16 +1,16 @@
-
 const Metrics = () => {
   const metrics = [
     {
-      value: "3 yrs",
+      value: "2 yrs",
       label: "Blockchain exp."
     },
     {
-      value: "$50M+", 
+      value: "$5M+",
       label: "Tokens launched"
     },
     {
-      value: "100k+",
+
+      value: "10k+",
       label: "Twitter listeners"
     }
   ];
@@ -36,3 +36,4 @@ const Metrics = () => {
 };
 
 export default Metrics;
+
