@@ -11,12 +11,13 @@ const Hero = () => {
           Ethereum Blockchain Developer & Web3 Builder.
         </p>
         
-        <div className="w-full max-w-2xl mx-auto mb-16">
-          <div className="aspect-video bg-gray-900 rounded-lg border border-gray-800 flex items-center justify-center">
-            <div className="text-gray-500 text-center">
-              <div className="text-6xl font-bold mb-2">IDA</div>
-              <div className="text-sm text-gray-600">Portfolio Showcase</div>
-            </div>
+        <div className="w-full max-w-md mx-auto mb-16">
+          <div className="aspect-[3/4] rounded-lg overflow-hidden">
+            <img 
+              src="/lovable-uploads/5d6f3b0e-aa95-4bb9-88ab-f1966c722351.png" 
+              alt="Iris - Web3 Developer Portrait"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
