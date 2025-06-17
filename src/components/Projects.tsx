@@ -3,78 +3,71 @@ const Projects = () => {
   const projects = [
     {
       name: "Token Airdrop DApp",
-      description: "Automated token distribution platform with multi-chain support",
-      tech: ["Solidity", "React", "Ethers.js"]
+      category: "DeFi / Governance",
+      tech: ["Solidity", "React"]
     },
     {
-      name: "BEON Beauty Platform",
-      description: "NFT marketplace for beauty products with staking rewards",
-      tech: ["Smart Contracts", "IPFS", "Web3"]
+      name: "BEON Beauty Platform", 
+      category: "NFTs / Socially",
+      tech: ["Smart Contracts", "IPFS"]
     },
     {
       name: "G20 Protocol Token",
-      description: "Governance token with advanced voting mechanisms",
-      tech: ["ERC-20", "DAO", "Governance"]
+      category: "Governance",
+      tech: ["ERC-20", "DAO"]
     },
     {
       name: "NFT w/ Staking",
-      description: "NFT collection with yield farming and staking utilities",
-      tech: ["ERC-721", "Staking", "Rewards"]
+      category: "NFT / Staking", 
+      tech: ["ERC-721", "Rewards"]
     },
     {
       name: "Web3 Creator Platform",
-      description: "Decentralized content creation and monetization platform",
-      tech: ["DeFi", "Creator Economy", "Tokens"]
+      category: "Community Growth",
+      tech: ["DeFi", "Creator Economy"]
     },
     {
       name: "Metamask Token dApp",
-      description: "Token management interface with advanced wallet integration",
-      tech: ["MetaMask", "Token Swap", "UI/UX"]
+      category: "DeFi Governance",
+      tech: ["MetaMask", "Token Swap"]
     }
   ];
 
   return (
-    <section id="projects" className="py-24 bg-black">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
-          Featured Projects
+    <section id="projects" className="py-20 bg-black">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-16">
+          Token Airdrop DApp
         </h2>
         
-        <div className="space-y-4">
+        <div className="space-y-1">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer group"
+              className="flex items-center justify-between py-4 px-0 border-b border-gray-800 hover:bg-gray-900/30 transition-colors cursor-pointer group"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                    {project.name}
-                  </h3>
-                  <p className="text-gray-400 mb-4 md:mb-0">
-                    {project.description}
-                  </p>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 md:ml-6">
-                  {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-700"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex-1">
+                <h3 className="text-white font-medium group-hover:text-blue-400 transition-colors">
+                  {project.name}
+                </h3>
+              </div>
+              
+              <div className="text-gray-400 text-sm min-w-[140px] text-center">
+                {project.category}
+              </div>
+              
+              <div className="flex gap-2 min-w-[120px] justify-end">
+                {project.tech.slice(0, 2).map((tech, techIndex) => (
+                  <span
+                    key={techIndex}
+                    className="text-gray-500 text-xs"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
-            View All Projects
-          </button>
         </div>
       </div>
     </section>
