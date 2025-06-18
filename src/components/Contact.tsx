@@ -1,14 +1,15 @@
-
 import { useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
-    email: "", 
+    email: "",
     message: ""
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -22,43 +23,47 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-black">
-      <div className="max-w-2xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+          Get In Touch
+        </h2>
+
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-800 rounded focus:border-gray-600 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:border-blue-500 focus:outline-none transition"
               required
             />
-            
+
             <input
               type="email"
               name="email"
-              placeholder="hi@yourcompany.com"
+              placeholder="you@example.com"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-800 rounded focus:border-gray-600 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:border-blue-500 focus:outline-none transition"
               required
             />
           </div>
-          
+
           <textarea
             name="message"
             placeholder="Your message..."
             value={formData.message}
             onChange={handleChange}
             rows={6}
-            className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-800 rounded focus:border-gray-600 focus:outline-none transition-colors resize-none"
+            className="w-full px-4 py-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:border-blue-500 focus:outline-none transition resize-none"
             required
           />
-          
+
           <button
             type="submit"
-            className="w-full py-3 bg-white text-black rounded font-medium hover:bg-gray-100 transition-colors"
+            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold rounded-md transition"
           >
             Send the message
           </button>
@@ -69,3 +74,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
