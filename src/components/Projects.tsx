@@ -1,4 +1,3 @@
-
 const Projects = () => {
   const projects = [
     {
@@ -20,18 +19,21 @@ const Projects = () => {
       link: "https://github.com/IRISofDEFI/g20-protocol-resistance"
     },
     {
-      name: "Cartoon MEME Token ",
-      category: "Forntend Design",
+      name: "Cartoon MEME Token",
+      category: "Frontend Design",
+      tech: ["HTML", "CSS"],
       link: "https://github.com/IRISofDEFI/rug-me-daddy-vibes.git"
     },
     {
       name: "MaxiBoz",
       category: "NFT Staking Platform",
+      tech: ["Solidity", "React"],
       link: "https://github.com/IRISofDEFI/MaxiBoz-Dapp"
     },
     {
       name: "Solpumpx V1",
       category: "Trading Volume Bot",
+      tech: ["Solana", "Rust"],
       link: "https://github.com/IRISofDEFI/solpumpx-v1"
     }
   ];
@@ -61,7 +63,7 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-2 min-w-[120px] justify-end">
-                {project.tech.slice(0, 2).map((tech, techIndex) => (
+                {(project.tech || []).slice(0, 2).map((tech, techIndex) => (
                   <span
                     key={techIndex}
                     className="text-gray-500 text-xs"
@@ -79,3 +81,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+

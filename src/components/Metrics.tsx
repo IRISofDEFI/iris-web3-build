@@ -1,8 +1,7 @@
-
 const Metrics = () => {
   const metrics = [
     {
-      value: "3 yrs",
+      value: "2 yrs",
       label: "Blockchain exp."
     },
     {
@@ -37,3 +36,4 @@ const Metrics = () => {
 };
 
 export default Metrics;
+
