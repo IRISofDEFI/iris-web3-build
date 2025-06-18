@@ -1,5 +1,5 @@
-
 import { Github, Twitter } from "lucide-react";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
             <Github className="w-5 h-5" />
             <span>GitHub</span>
           </a>
-          
+
           <a
             href="https://x.com/iris_of_defi?s=21&t=bfQCrmhV29cLFss7zh1S5A"
             target="_blank"
@@ -25,17 +25,15 @@ const Footer = () => {
             <Twitter className="w-5 h-5" />
             <span>Twitter</span>
           </a>
-          
+
           <a
-            href="https://etherscan.io"
+            href="https://t.me/IrisofDefi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors flex items-center space-x-2"
           >
-            <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
-              E
-            </div>
-            <span>Etherscan</span>
+            <FaTelegramPlane className="w-5 h-5" />
+            <span>Telegram</span>
           </a>
         </div>
       </div>
@@ -44,3 +42,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
